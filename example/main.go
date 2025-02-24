@@ -60,8 +60,7 @@ func main() {
 		log.Fatalf("Stop continuous failed: %v", err)
 	}
 
-	// close I2C connection
-	i2c.Close()
+	// I2C connection is closed by earlier defer statement
 }
 
 // setROI sets the region of interest
